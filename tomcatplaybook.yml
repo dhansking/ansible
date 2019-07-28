@@ -1,6 +1,9 @@
 ---
 - hosts: all
   remote_user: ec2-user
-  tasks:
-    - name: test connection
-      ping:
+  become: yes
+  become_user: root
+    tasks:
+      - name: wget install
+      yum:
+        name:wget
