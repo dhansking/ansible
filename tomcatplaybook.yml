@@ -1,6 +1,8 @@
-- name: Tomcat Install Instances
+---
+- name: Hello World!
   hosts: all
+
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+
+  - name: Hello World!
+    shell: echo "Hi! Tower is working."
