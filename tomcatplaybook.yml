@@ -1,4 +1,4 @@
-- name: Hello World Sample
+- name: Tomcat Install Instances
   hosts: all
   tasks:
     - name: Hello Message
