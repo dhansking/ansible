@@ -1,5 +1,6 @@
 ---
 - hosts: all
+  interpreter_python: auto_silent
   tasks:
     - name: server test.
       action: ping
