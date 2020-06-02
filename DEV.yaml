@@ -1,5 +1,7 @@
 ---
 - hosts: all
+  var_files:
+    - variable_test.yaml
   tasks:
     - name: server test.
       action: ping
