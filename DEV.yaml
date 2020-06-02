@@ -3,4 +3,5 @@
   tasks:
     - name: server test.
       action: ping
-
+    - name: Shell test
+      action: "uname -a"
