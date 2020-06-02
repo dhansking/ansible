@@ -4,4 +4,4 @@
     - name: server test.
       action: ping
     - name: Shell test
-      action: "uname -a"
+      shell: "uname -a"
