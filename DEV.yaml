@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  var_files:
+  vars_files:
     - variable_test.yaml
   tasks:
     - name: server test.
