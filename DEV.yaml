@@ -6,4 +6,4 @@
     - name: Shell test
       shell: "uname -a"
       register: u_result
-    - debug: msg="{{ u_result }}"
+    - debug: msg="{{ u_result.stdout }}"
