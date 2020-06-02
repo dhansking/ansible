@@ -1,5 +1,7 @@
 ---
 - hosts: all
+  vars:
+    new_name: Dhans
   vars_files:
     - variable_test.yaml
   tasks:
@@ -10,3 +12,4 @@
       register: u_result
     - debug: msg="{{ u_result.stdout }}"
     - debug: msg="{{ port }}"
+    - debug: msg="{{ new_name }}"
