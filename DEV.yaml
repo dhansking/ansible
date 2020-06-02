@@ -5,3 +5,4 @@
       action: ping
     - name: Shell test
       shell: "uname -a"
+      register: u_result
