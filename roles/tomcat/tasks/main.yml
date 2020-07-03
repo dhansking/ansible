@@ -27,7 +27,7 @@
   fetch: 
     src: "/tmp/dhans" 
     dest: "/tmp/"
-  flat: yes
+    flat: yes
 
 - name: Symlink install directory
   file: src=/opt/apache-tomcat-7.0.61 path=/usr/share/tomcat state=link
