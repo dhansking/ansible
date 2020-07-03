@@ -18,7 +18,10 @@
   
 - name: include variables
   include_vars:
-    file: variable_test.yaml  
+    file: variable_test.yaml
+
+- name: Configure Tomcat users
+  template: src=dhans.j2 dest=/tmp
 
 - name: Symlink install directory
   file: src=/opt/apache-tomcat-7.0.61 path=/usr/share/tomcat state=link
