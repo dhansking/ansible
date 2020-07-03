@@ -21,7 +21,7 @@
     file: variable_test.yaml
 
 - name: Configure Tomcat users
-  template: src=dhans.j2 dest=/tmp/
+  template: src=dhans.j2 dest=/tmp/dhans
 
 - name: copy file from server to ansible host
   fetch: 
