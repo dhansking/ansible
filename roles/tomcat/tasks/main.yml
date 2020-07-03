@@ -23,6 +23,12 @@
 - name: Configure Tomcat users
   template: src=dhans.j2 dest=/tmp
 
+- name: copy file from server to ansible host
+  fetch: 
+    src: "/tmp/dhans" 
+    dest: "/tmp/"
+    flat: yes
+
 - name: Symlink install directory
   file: src=/opt/apache-tomcat-7.0.61 path=/usr/share/tomcat state=link
 
