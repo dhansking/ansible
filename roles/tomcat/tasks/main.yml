@@ -18,7 +18,7 @@
   
 - name: include variables
   include_vars:
-    file: variable_test.yaml
+    file: variable_test.json
 
 - name: Configure Tomcat users
   template: src=dhans.j2 dest=/tmp/dhans
